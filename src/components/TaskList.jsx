@@ -6,7 +6,7 @@ export default function Tasklist() {
   const { tasks } = useContext(TaskContext);
 
   if (tasks.length === 0) {
-    return <h1>No hay elementos</h1>;
+    return <h1 className="text-2xl font-bold mb-2">No tienes tareas pendientes</h1>;
   }
 
   return (
